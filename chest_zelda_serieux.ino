@@ -30,7 +30,7 @@
 #include <avr/io.h>
 #include <avr/pgmspace.h>
 
-#define SAMPLE_RATE 8000
+#define SAMPLE_RATE 4000
 #define SWITCH_PIN 2
 
 const int debounceTime = 4000;
