@@ -1,6 +1,6 @@
 // sounddata sound made by wav2c
 
-// const int sounddata_sampleRate = 4000;
+#define SAMPLE_RATE 4000
 const int sounddata_length = 29055;
 
 const signed char sounddata_data[] PROGMEM ={128, 
