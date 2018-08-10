@@ -15,7 +15,7 @@
 
 // Variables et constances utilisées pour gérer le bouton
 const int debounceTime = 200;
-long last_play;
+long last_state_change;
 
 /*
   Les fonctions setup et loop sont toujours présentes dans les programmes Arduino.
@@ -27,8 +27,7 @@ long last_play;
   lorsque le bouton ferme le circuit, la fonction switchon doit etre exécuté.
 
 */
-void setup()
-{
+void setup() {
   pinMode(SPEAKER_PIN, OUTPUT);
   pinMode(LED_PIN,     OUTPUT);
   pinMode(SWITCH_PIN,  INPUT);
@@ -39,13 +38,12 @@ void setup()
 }
 
 // Nous n'avons rien à exécuter dans loop, puisque le 'attachInterrupt' s'occupe de tout
-void loop()
-{
+void loop() {
 }
 
-void switchon()  {
-  if (millis() - last_play > debounceTime) {    // Pour s'assurer que le bouton n'enregistre qu'un clic à la fois
-    last_play = millis();
+void switchon() {
+  if (millis() - last_state_change > debounceTime) {    // Pour s'assurer que le bouton n'enregistre qu'un clic à la fois
+    last_state_change = millis();
 
     // on allume les LED
     digitalWrite(LED_PIN, HIGH);
@@ -61,8 +59,8 @@ void switchon()  {
 }
 
 void switchoff() {
-  if (millis() - last_play > debounceTime) {
-    last_play = millis();
+  if (millis() - last_state_change > debounceTime) {
+    last_state_change = millis();
 
     // On éteint les LED
     digitalWrite(LED_PIN, LOW); 
