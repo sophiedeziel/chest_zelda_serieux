@@ -2,6 +2,9 @@
   Le code ci-dessous ainsi que les fichiers sounddata.h et speaker_pcm.h doivent être présents lors du transfert sur votre
   Arduino. Ce fichier gère le matériel qui est branché au Arduino. sounddata.h contient les données audio à jouer et
   speaker_pcm.h s'occupe de transformer ces données audio en signal pour le speaker.
+
+  Sophie Déziel <courrier@sophiedeziel.com>
+  twitch.tv/sophiedeziel
 */
 
 #define SWITCH_PIN 2          // Sur le Arduino nano, seule la pin 2 ou 3 peuvent servir avec les interupts de ce code
