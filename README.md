@@ -5,11 +5,11 @@ Voici le fruit de la collaboraboration entre Sophie Déziel et Le Jeu C'est Sér
 ## Liste du matériel
 
 - Arduino Nano
-- Haut-Parleur 8 Ohms
+- Haut-Parleur
 - Transistor TIP31c (peut être remplacé par de nombreux autres types de transistors)
 - Microswitch "Normaly Closed"
 - 2 LED de la couleur de votre choix
-- Résistances ( valeurs à vérifier)
+- 1 résistance 4.7kOhm
 - Pile 9v ainsi que son connecteur
 
 ## Schéma de branchement
